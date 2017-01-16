@@ -1,8 +1,9 @@
 package simple_config
 
 import (
-	"github.com/spf13/viper"
 	"log"
+
+	"github.com/spf13/viper"
 )
 
 type SimpleConfig struct {
@@ -12,6 +13,10 @@ type SimpleConfig struct {
 
 func (c *SimpleConfig) Get(key string) interface{} {
 	return viper.Get(key)
+}
+
+func (c *SimpleConfig) GetString(key string) string {
+	return viper.GetString(key)
 }
 
 func NewSimpleConfig(configFile string, configType string) SimpleConfig {
