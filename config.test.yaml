@@ -1,1 +1,2 @@
-test-key: test value
+testkey: test value
+fromenv: from config

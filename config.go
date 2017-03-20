@@ -24,6 +24,7 @@ func NewSimpleConfig(configFile string, configType string) SimpleConfig {
 	viper.SetConfigName(config.configFile)
 	viper.SetConfigType(config.configType)
 	viper.AddConfigPath("./")
+	viper.AutomaticEnv()
 	err := viper.ReadInConfig()
 	if err != nil {
 		log.Fatalf("Fatal configuration error: %s \n", err)

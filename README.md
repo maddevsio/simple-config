@@ -12,5 +12,7 @@ value := config.Get("test-key")
 #config.test.yaml is:
 
 ```yaml
-test-key: test value
+testkey: test value
 ```
+
+To redefine "testkey" via env set TESTKEY env var
