@@ -7,7 +7,7 @@ go get -v github.com/maddevsio/simple-config
 #Usage:
 ```go
 config := NewSimpleConfig("./config.test", "yml")
-value := config.Get("test-key")
+value := config.Get("testkey")
 ```
 #config.test.yaml is:
 
